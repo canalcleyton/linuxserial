@@ -1,5 +1,10 @@
 # Linux Serial Virtual
 
+How to work with serial port on linux using tty0tty made by Luis Claudio Gamboa Lopes
+
+
+        tty0tty - linux null modem emulator v1.2 
+
 Saudações!!
 
 Este emulador de porta serial foi criado originalmente por Luis Claudio Gamboa Lopes,
@@ -57,11 +62,6 @@ de compilação GNU ou compatível. Para tal, nas distros Debian ou Ubuntu, exec
         sudo apt-get install linux-image-$(uname -r)
         
 # Abaixo, do Original:
- 	
-How to work with serial port on linux using tty0tty made by Luis Claudio Gamboa Lopes
-
-
-        tty0tty - linux null modem emulator v1.2 
 
 
 This is the tty0tty directory tree:
