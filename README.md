@@ -3,7 +3,7 @@
 Saudações!!
 
 Este emulador de porta serial foi criado originalmente por Luis Claudio Gamboa Lopes,
-após algumas pesquisas atualizei por sugestões do qastack, no seguinte endereço:
+após algumas pesquisas atualizei por sugestões contidas no qastack, no seguinte endereço:
 
 https://qastack.com.br/programming/52187/virtual-serial-port-for-linux
 
