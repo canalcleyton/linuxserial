@@ -1,4 +1,4 @@
-# linuxserial
+# Linuxserial
 
 Saudações!!
 
@@ -74,38 +74,36 @@ When run connect two pseudo-ttys and show the connection names:
 
         (/dev/pts/1) <=> (/dev/pts/2) 
 
-the connection is:
+## the connection is:
   
-  TX -> RX
-  RX <- TX 	
+        TX -> RX
+        RX <- TX
 
+## module:
 
+The module is tested in kernel 3.10.2 (debian) 
 
-module:
+## When loaded, create 8 ttys interconnected:
 
- The module is tested in kernel 3.10.2 (debian) 
+        /dev/tnt0  <=>  /dev/tnt1 
+        /dev/tnt2  <=>  /dev/tnt3 
+        /dev/tnt4  <=>  /dev/tnt5 
+        /dev/tnt6  <=>  /dev/tnt7 
 
-  When loaded, create 8 ttys interconnected:
-  /dev/tnt0  <=>  /dev/tnt1 
-  /dev/tnt2  <=>  /dev/tnt3 
-  /dev/tnt4  <=>  /dev/tnt5 
-  /dev/tnt6  <=>  /dev/tnt7 
-
-  the connection is:
+## the connection is:
   
-  TX   ->  RX
-  RX   <-  TX
-  RTS  ->  CTS
-  CTS  <-  RTS
-  DSR  <-  DTR
-  CD   <-  DTR
-  DTR  ->  DSR
-  DTR  ->  CD
+        TX   ->  RX
+        RX   <-  TX
+        RTS  ->  CTS
+        CTS  <-  RTS
+        DSR  <-  DTR
+        CD   <-  DTR
+        DTR  ->  DSR
+        DTR  ->  CD
   
 
-Requirements:
+## Requirements:
 
-  for module build is necessary kernel-headers or kernel source
+        for module build is necessary kernel-headers or kernel source
 
-
-For e-mail suggestions :  lcgamboa@yahoo.com
+### For e-mail suggestions :  lcgamboa@yahoo.com
