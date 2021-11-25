@@ -51,7 +51,7 @@ O resumo atualizado dos passos para instalar é:
         tty0tty
 
 Lembrando que seu S.O. Linux deve estar com os arquivos fontes de cabeçalho instalados, bem como as ferramentas
-de compilação GNU ou compatível. Tal pode ser realizada nas distros debian ou ubunto por:
+de compilação GNU ou compatível. Para tal, nas distros Debian ou Ubuntu, execute os comandos:
 
         sudo apt-get install linux-headers-$(uname -r) build-essential linux-headers-generic manpages-dev
         sudo apt-get install linux-image-$(uname -r)
