@@ -55,6 +55,8 @@ de compilação GNU ou compatível. Para tal, nas distros Debian ou Ubuntu, exec
 
         sudo apt-get install linux-headers-$(uname -r) build-essential linux-headers-generic manpages-dev
         sudo apt-get install linux-image-$(uname -r)
+        
+# Abaixo, do Original:
  	
 How to work with serial port on linux using tty0tty made by Luis Claudio Gamboa Lopes
 
