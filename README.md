@@ -1,2 +1,55 @@
 # linuxserial
 How to work with serial port on linux using tty0tty made by Luis Claudio Gamboa Lopes
+
+
+
+tty0tty - linux null modem emulator v1.2 
+
+
+This is the tty0tty directory tree:
+
+  module         - linux kernel module null-modem
+  pts		 - null-modem using ptys (without handshake lines)
+
+
+pts (unix98): 
+
+  When run connect two pseudo-ttys and show the connection names:
+
+  (/dev/pts/1) <=> (/dev/pts/2) 
+
+  the connection is:
+  
+  TX -> RX
+  RX <- TX 	
+
+
+
+module:
+
+ The module is tested in kernel 3.10.2 (debian) 
+
+  When loaded, create 8 ttys interconnected:
+  /dev/tnt0  <=>  /dev/tnt1 
+  /dev/tnt2  <=>  /dev/tnt3 
+  /dev/tnt4  <=>  /dev/tnt5 
+  /dev/tnt6  <=>  /dev/tnt7 
+
+  the connection is:
+  
+  TX   ->  RX
+  RX   <-  TX 	
+  RTS  ->  CTS
+  CTS  <-  RTS
+  DSR  <-  DTR
+  CD   <-  DTR
+  DTR  ->  DSR
+  DTR  ->  CD
+  
+
+Requirements:
+
+  for module build is necessary kernel-headers or kernel source
+
+
+For e-mail suggestions :  lcgamboa@yahoo.com
