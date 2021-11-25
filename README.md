@@ -42,29 +42,26 @@ O resumo atualizado dos passos para instalar é:
 	```
 	        
 5. Conceda permissões apropriadas às novas portas seriais
+
 	```
         sudo chmod 666 /dev/tnt*
 	```
 
 6. Incluir a linha seguinte no arquivo /etc/modules-load.d/modules.conf (para que o módulo seja carregado automaticamente)
 
-	```
         tty0tty
-	```
 
 Lembrando que seu S.O. Linux deve estar com os arquivos fontes de cabeçalho instalados, bem como as ferramentas
 de compilação GNU ou compatível. Tal pode ser realizada nas distros debian ou ubunto por:
 
-	```
         sudo apt-get install linux-headers-$(uname -r) build-essential linux-headers-generic manpages-dev
         sudo apt-get install linux-image-$(uname -r)
- 	```
  	
 How to work with serial port on linux using tty0tty made by Luis Claudio Gamboa Lopes
 
-        ```
+
         tty0tty - linux null modem emulator v1.2 
-        ```
+
 
 This is the tty0tty directory tree:
 
