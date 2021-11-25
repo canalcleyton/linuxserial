@@ -14,10 +14,10 @@ https://qastack.com.br/ubuntu/588800/setup-virtual-serial-ports-linux-null-modem
 O resumo atualizado dos passos para instalar é:
 
 1. Baixe o pacote tty0tty de uma destas fontes:
-		...
+		'''
 		clone o repo https://github.com/canalcleyton/linuxserial
 		git clone https://github.com/canalcleyton/linuxserial
-		...
+		'''
 2. Construa o módulo do kernel a partir da fonte fornecida
 		cd linuxserial/module
 		make
