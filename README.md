@@ -15,17 +15,17 @@ O resumo atualizado dos passos para instalar é:
 
 1. Baixe o pacote tty0tty de uma destas fontes:
 		```
-		clone o repo https://github.com/canalcleyton/linuxserial
+		clone o repo https://github.com/canalcleyton/linuxserial__
 		git clone https://github.com/canalcleyton/linuxserial
 		```
-2. Construa o módulo do kernel a partir da fonte fornecida
-		cd linuxserial/module
+2. Construa o módulo do kernel a partir da fonte fornecida__
+		cd linuxserial/module__
 		make
-3. Copie o novo módulo do kernel no diretório de módulos do kernel
-		sudo cp tty0tty.ko /lib/modules/$(uname -r)/kernel/drivers/misc/
-4. Carregue o módulo
-		sudo depmod
-		sudo modprobe tty0tty
+3. Copie o novo módulo do kernel no diretório de módulos do kernel__
+		sudo cp tty0tty.ko /lib/modules/$(uname -r)/kernel/drivers/misc/__
+4. Carregue o módulo__
+		sudo depmod__
+		sudo modprobe tty0tty__
 		Você deve ver novas portas seriais em /dev/(ls /dev/tnt*)
 5. Conceda permissões apropriadas às novas portas seriais
 		sudo chmod 666 /dev/tnt*
